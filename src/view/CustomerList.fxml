@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="postal" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerList">
+   <children>
+      <TableView fx:id="customerTable" layoutX="25.0" layoutY="183.0" prefHeight="200.0" prefWidth="627.0">
+        <columns>
+          <TableColumn fx:id="customerIdCol" prefWidth="84.00001525878906" text="Customer_ID" />
+          <TableColumn fx:id="customerNameCol" prefWidth="108.33334350585938" text="Customer_Name" />
+            <TableColumn fx:id="addressCol" prefWidth="82.33334350585938" text="Address" />
+            <TableColumn fx:id="postalCodeCol" prefWidth="89.33334350585938" text="Postal Code" />
+            <TableColumn fx:id="divisionCol" prefWidth="76.66668701171875" text="Division" />
+            <TableColumn fx:id="countryCol" prefWidth="75.33331298828125" text="Country" />
+            <TableColumn fx:id="phoneNumCol" prefWidth="107.33333333333337" text="Phone Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateCustomerButton" layoutX="77.0" layoutY="409.0" mnemonicParsing="false" onAction="#updateCustomerButtonClicked" text="Update Customer" />
+      <Button fx:id="addCustomerButton" layoutX="281.0" layoutY="409.0" mnemonicParsing="false" onAction="#addCustomerButtonClicked" text="Add Customer" />
+      <Button fx:id="deleteCustomerButton" layoutX="476.0" layoutY="409.0" mnemonicParsing="false" onAction="#deleteCustomerButtonClicked" text="Delete Customer" />
+      <Button fx:id="reportPageButton" layoutX="685.0" layoutY="357.0" mnemonicParsing="false" onAction="#reportPageButtonClicked" text="Report Page" />
+      <Button fx:id="viewAppointmentsButton" layoutX="666.0" layoutY="270.0" mnemonicParsing="false" onAction="#viewAppointmentsButtonClicked" text="View Appointments" />
+      <Label layoutX="43.0" layoutY="50.0" text="Global Consulting">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="151.0" text="Customer Table View">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

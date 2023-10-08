@@ -1,0 +1,43 @@
+Title: C195Project
+
+Purpose of Application: The purpose of this application was to create a GUI-based application for a company
+which allowed it's users to add,update, or delete customers and their respective appointments. The application
+also generates three separate reports for the user to use at their own discretion.
+
+Author: Isom Brown
+
+Contact info: ibrow71@wgu.edu
+
+Application Version: 101.0.4951.67
+
+Date of completion: 2022-05-18
+
+IDE: IntelliJ IDEA 2021.3.1 (Community Edition), Oracle Open JDK version 17.0.1, and javafx runtime version 17.0.1+1
+
+Directions:
+* Launch Application
+* Login into application with correct user information
+* Once you log in you will be brought to a table view of all the customers listed in the database
+* From here you can update a specific customer's info, add new customers, delete customers, go to view of all
+appointments, or view three reports that were built into the application
+* While viewing the appointments table you can update a specific appointment, add new appointments, delete
+appointments, or return back to the table view of all customers
+* If you choose to review the reports page you can generate three different reports: one report tallies the total number
+of appointments given an appointment month and type, a second lets you look at a table view of scheduled appointments
+for a selected contact, the last allows you to look at a selected customers total number of appointments
+
+Additional Report (part 3.A.f): For my additional report I wanted a quick and simple way to see how many appointments
+a customer currently had scheduled. My report asks the user to select a customer's name from a combo-box then
+displays the total number of appointments the user has
+
+MySQL Connector Driver version: mysql-connector-java-8.0.28
+
+Resources Used:
+* All C915 Webinars
+* C195 Code Repository for timezone conversion
+* https://stackoverflow.com/questions/28937392/javafx-alerts-and-their-size
+* https://www.w3resource.com/mysql/date-and-time-functions/mysql-month-function.php#:~:text=GMT%20%2B8%20hours)-,MONTH()%20function,for%20the%20date%20is%200
+* https://www.geeksforgeeks.org/compare-two-strings-in-java/
+* https://stackoverflow.com/questions/6567923/timezone-conversion
+* Random google searches here in there
+
