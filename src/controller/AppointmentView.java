@@ -84,8 +84,6 @@ public class AppointmentView {
      */
     public void monthlyAppsRadioButtonSelected(ActionEvent actionEvent) {
 
-        //Old cold for 30 days out
-        /*
         ObservableList<Appointment> appsWithinMonth = FXCollections.observableArrayList();
         LocalDateTime currentDateTime = LocalDateTime.now();
         LocalDateTime futureDateTime = currentDateTime.plusDays(30);
@@ -111,7 +109,6 @@ public class AppointmentView {
         endTimeCol.setCellValueFactory(new PropertyValueFactory<>("endDateAndTime"));
         customerIDCol.setCellValueFactory(new PropertyValueFactory<>("customerID"));
         userIDCol.setCellValueFactory(new PropertyValueFactory<>("userID"));
-         */
     }
 
     /**Method displays upcoming appointments within the next 7 days
