@@ -13,15 +13,6 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 
 
-/** This class creates an app for a scheduling application.
- * Isom Brown
- *
- * ibrow71@wgu.edu
- *
- * Student ID#004478495
- *
- * JavaDocs for this project can be located in the folder IsomBrownC195Project
- */
 public class Main extends Application {
 
     /** This is the start method.
@@ -46,12 +37,6 @@ public class Main extends Application {
         //opening database connection
         JDBC.openConnection();
 
-        //Setting locale to french to test translation on login page
-        //Locale.setDefault(new Locale("fr"));
-
-        //System.out.println(System.getProperty("javafx.runtime.version"));
-
-
         //initializing records(lists) from information in database
         CustomerRecords.populateCustomerRecords();
         CustomerRecords.setUSDivisionList();
@@ -62,19 +47,6 @@ public class Main extends Application {
         CustomerRecords.setContactList();
         CustomerRecords.setUserList();
         CustomerRecords.setAllAppointments();
-
-        //Testing method for getting filtering appointments by current month
-        LocalDateTime current = LocalDateTime.now();
-        System.out.println(current.getMonth());
-
-        System.out.println(CustomerRecords.Months.values()[2]);
-        //int length = CustomerRecords.Months.values().length;
-
-        for (int i = 0; i < CustomerRecords.Months.values().length; i++){
-            if (CustomerRecords.Months.values()[i].equals(CustomerRecords.Months.September)) {
-                System.out.println(CustomerRecords.Months.September);
-            }
-        }
 
 
         launch(args);
